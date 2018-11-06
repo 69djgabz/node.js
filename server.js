@@ -40,7 +40,7 @@ hbs.registerHelper("screamIt", text => {
 }); */
 app.get("/", (req, res) => {
   res.render("home.hbs", {
-    pageTitle: "home page",
+    pageTitle: "Home Page",
     welcomeMessage: "welcome to Home page!"
   });
 });
@@ -48,6 +48,11 @@ app.get("/", (req, res) => {
 app.get("/About", (req, res) => {
   res.render("about.hbs", {
     pageTitle: "About page"
+  });
+});
+app.get("/projects", (req, res) => {
+  res.render("projects.hbs", {
+    pageTitle: "projects"
   });
 });
 app.get("/bad", (req, res) => {
