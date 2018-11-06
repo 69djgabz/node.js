@@ -31,14 +31,14 @@ hbs.registerHelper("screamIt", text => {
   return text.toUpperCase();
 });
 
-app.get("/", (req, res) => {
+/* app.get("/", (req, res) => {
   // res.send("<h1>Hello Express!</h1>");
   res.send({
     name: "Gabi",
     likes: ["swimming", "laughing"]
   });
-});
-app.get("/home", (req, res) => {
+}); */
+app.get("/", (req, res) => {
   res.render("home.hbs", {
     pageTitle: "home page",
     welcomeMessage: "welcome to Home page!"
