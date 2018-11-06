@@ -16,11 +16,11 @@ app.use((req, res, next) => {
   fs.appendFileSync("server.log", log + "\n");
   next();
 });
-
+/* 
 app.use((req, res, next) => {
   res.render("maintenance.hbs");
 });
-
+ */
 hbs.registerHelper("getCurrentYear", () => {
   return new Date().getFullYear();
 });
